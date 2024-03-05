@@ -30,16 +30,23 @@ section{
 
 /*HEADER*/
 .wrapper-header{
+    border-bottom: 1px solid #e7e9fc
+}
+
+.wrapper{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    justify-content: space-between;
+}
+
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .menu{
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .logo{
@@ -70,6 +77,7 @@ section{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .submenu .submenu-list:hover,
@@ -102,6 +110,7 @@ section{
 /*TITLE*/
 .title{
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .title-list{
@@ -111,28 +120,25 @@ section{
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    width: 496px;
     margin: 0 auto;
-    margin-top: 188px;
+    max-width: 496px;
     margin-bottom: 48px;
 }
 
 .btn{
+    display: block;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     color: #ffffff;
     cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
     padding: 16px 32px 16px 32px;
+    border: none;
     border-radius: 4px;
-    gap: 10;
-}
-
-.btn-title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 188px;
 }
 
 .btn:hover, .btn:focus{
@@ -148,7 +154,7 @@ section{
 }
 
 .first-slider-content{
-    max-width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 .first-title-list{
@@ -157,6 +163,7 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    visibility: hidden;
 }
 
 .third-title-list{
@@ -165,6 +172,7 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .description{
@@ -196,10 +204,17 @@ section{
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px;
 }
 
 .second-slider-content{
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.wrapper-name{
+    padding: 32px 0;
 }
 
 .name{
@@ -209,7 +224,7 @@ section{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2E2F42;
-    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .text{
@@ -232,21 +247,24 @@ section{
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .third-slider{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    margin-top: 72px;
-    margin-left: 156px;
-    margin-right: 156px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .third-slider .third-slider-content{
     width: calc((100% - 48px) / 3);
-    min-height: 420px;
+}
+
+.wrapper-name-content{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .name-content{
@@ -255,8 +273,7 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 32px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .text-content{
@@ -265,13 +282,16 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-top: 8px;
-    padding-left: 16px;
 }
 
 /*FOOTER*/
 .footer{
     background-color: #2E2F42;
+    padding: 100px 0;
+}
+
+.container{
+    border: 1px dashed red;
 }
 
 .logo-footer{
@@ -283,9 +303,9 @@ section{
     text-decoration: none;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: block;
-    padding-top: 100px;
-    padding-left: 156px;
+    display: inline-block;;
+    margin-bottom: 16px;
+    
 }
 
 .web-footer{
@@ -299,7 +319,5 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    margin-top: 16px;
-    margin-left: 156px;
-    padding-bottom: 100px;
+    max-width: 264px;
 }
