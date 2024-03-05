@@ -35,7 +35,6 @@ section{
 
 .wrapper{
     display: flex;
-    justify-content: space-between;
 }
 
 .container{
@@ -105,6 +104,7 @@ section{
 
 .info{
     font-style: normal;
+    margin-left: 332px;
 }
 
 /*TITLE*/
@@ -163,7 +163,10 @@ section{
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    visibility: hidden;
+}
+
+.visually-hidden{
+    display: none;
 }
 
 .third-title-list{
